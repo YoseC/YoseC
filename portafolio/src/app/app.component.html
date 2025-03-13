@@ -1,10 +1,12 @@
 <mat-toolbar color="primary">
-  <span>Mi Portafolio</span>
+  <span class="logo">Mi Portafolio</span>
   <span class="spacer"></span>
-  <a mat-button routerLink="/">Inicio</a>
-  <a mat-button routerLink="/about">Sobre mí</a>
-  <a mat-button routerLink="/projects">Proyectos</a>
-  <a mat-button routerLink="/contact">Contacto</a>
+  <nav>
+    <a mat-button routerLink="/" routerLinkActive="active">Inicio</a>
+    <a mat-button routerLink="/about" routerLinkActive="active">Sobre mí</a>
+    <a mat-button routerLink="/projects" routerLinkActive="active">Proyectos</a>
+    <a mat-button routerLink="/contact" routerLinkActive="active">Contacto</a>
+  </nav>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

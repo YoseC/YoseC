@@ -1,4 +1,24 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
 .spacer {
-    flex: 1;
-  }
-  
+  flex: 1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(177, 5, 5);
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
