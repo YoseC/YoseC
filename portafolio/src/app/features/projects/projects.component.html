@@ -1,11 +1,15 @@
 <mat-card>
-    <h2>Mis Proyectos</h2>
-    <div class="projects-container">
-      <mat-card *ngFor="let project of projects">
+  <h2>Mis Proyectos</h2>
+  <div class="projects-container">
+    <mat-card *ngFor="let project of projects">
+      <img mat-card-image [src]="project.image" alt="{{ project.name }}">
+      <mat-card-content>
         <h3>{{ project.name }}</h3>
         <p>{{ project.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
         <a mat-button color="primary" [href]="project.link" target="_blank">Ver Proyecto</a>
-      </mat-card>
-    </div>
-  </mat-card>
-  
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</mat-card>
